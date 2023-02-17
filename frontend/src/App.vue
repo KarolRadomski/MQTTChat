@@ -1,0 +1,27 @@
+<template>
+  <router-view />
+</template>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  background-color: #eceef0;
+}
+
+#app {
+  width: 100%;
+
+  /* max-width: 1440px; */
+  /* min-height: 100vh; */
+  margin: 0 auto;
+}
+</style>
