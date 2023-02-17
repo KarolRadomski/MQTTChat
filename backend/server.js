@@ -18,6 +18,12 @@ app.use('/api/topics', require('./routes/topicRoutes'));
 app.use('/api/access', require('./routes/accessRoutes'));
 app.use('/api/messages', require('./routes/messageRoutes'));
 
+// Handle production
+if (process.env.NODE_ENV === 'production') {
+  // Handle SPA
+  app.get('*', (req, res) => res.sendFile(path.resolve(__dirname, 'public/index.html')));
+}
+
 app.use(errorHandler);
 
 app.listen(port, () => console.log(`Server started on port ${port}`));
