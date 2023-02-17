@@ -20,7 +20,8 @@
     "express-async-handler": "^1.2.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.7.5",
-    "mqtt": "^4.3.7"
+    "mqtt": "^4.3.7",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
